@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a =+prompt('mời nhập số phần tử')
+        let arr =[]
+        for (let i = 0; i < a; i++) {
+            let b =+prompt('mời nhập phần tử')
+            if(b<0){
+                arr.unshift(b)
+            }else{
+                arr.push(b)
+            }
+        }
+        console.log(arr);
+    </script>
+</body>
+</html>

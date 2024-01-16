@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = + prompt('mời nhập số lượng phần tử')
+        let count
+        let arr =[]
+        for (let i = 0; i < a; i++) {
+            let b = +prompt('nhập phần tử '+(i + 1))
+            arr.push(b)
+        }
+        for (i = 0; i < a; i++) {
+            count = 1
+            for (let j = i +1 ; j < a; j++) {
+                if(arr[i]===arr[j]){
+                    count ++
+                }
+                
+            }
+            if (count>=2){
+                console.log(arr[i]);
+            }
+        }
+    </script>
+</body>
+
+</html>

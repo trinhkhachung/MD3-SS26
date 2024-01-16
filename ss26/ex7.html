@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr =  [1, 5, 6, 3, 2, 1, 1, 5, 6, 7];
+        let result = [];
+        let find_sum = +prompt("mời nhập số");
+        check = 0;
+        for (let i = 0; i < arr.length - 1; i++) {
+            let sum = 0;
+            for (let j = i; j < arr.length; j++) {
+                sum += arr[j];
+                if (sum === find_sum) {
+                    result = arr.slice(i, j + 1);
+                    check = 1;
+                    break;
+                }
+            }
+            if (check) {
+                break;
+            }
+        }
+        alert(result);
+    </script>
+</body>
+
+</html>
